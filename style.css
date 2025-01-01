@@ -24,14 +24,14 @@ body {
   width: 100%;
   min-height: 100vh;
   display: grid;
-  grid-template-rows: 7rem 1fr;
+  grid-template-rows: 6rem 1fr;
 }
 
 .header_navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 2rem;
+  padding: 1rem 2rem;
 }
 
 .logo {
@@ -40,13 +40,15 @@ body {
 
 .menu,
 .menu_activator {
-  height: 71%;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 .menu_activator_image {
   color: black;
   background-color: black;
   height: 100%;
+  cursor: pointer;
 }
 
 .main {
@@ -80,7 +82,7 @@ body {
 
 .item2 {
   color: #ffffff;
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 .item3 {
@@ -94,14 +96,74 @@ body {
   align-items: center;
 }
 
-.main_sections_button_circule{
-    height: 12rem;
-    width: 12rem;
-    border-radius: 50%;
-    font-size: 2rem;
-    transition: .3s ease;
+.main_sections_button_circule {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  transition: 0.3s ease;
+  cursor: pointer;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    &:hover{
-        outline: 5rem solid #ffffff44;
-    }
+  &:hover {
+    outline: 5rem solid #ffffff44;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.main_sections_button_link {
+  color: #000;
+}
+
+.aside {
+  position: absolute;
+  height: 100%;
+  width: 70%;
+  transition: all 1s ease;
+  right: 0;
+  backdrop-filter: blur(2rem);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  display: none;
+}
+
+.clouse_aside {
+  align-self: flex-end;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.clouse_aside_image {
+  width: 100%;
+  height: 100%;
+}
+
+.aside_links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 15rem;
+  width: 100%;
+}
+
+.aside_link {
+  color: #ffffff;
+  font-size: 1.3rem;
+  width: 100%;
+  transition: .3s ease;
+
+  &:hover {
+    border-right: -3px solid #ffffff71;
+  }
 }
