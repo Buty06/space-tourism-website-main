@@ -31,15 +31,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-}
-
-.logo {
-  height: 100%;
+  padding: 0 2rem;
 }
 
 .menu,
-.menu_activator {
+.menu_activator,
+.logo {
   height: 2.5rem;
   width: 2.5rem;
 }
@@ -48,6 +45,7 @@ body {
   color: black;
   background-color: black;
   height: 100%;
+  width: 100%;
   cursor: pointer;
 }
 
@@ -132,7 +130,7 @@ a {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  padding: 1rem 2rem;
+  padding: 0rem 2rem;
   display: none;
 }
 
@@ -141,6 +139,8 @@ a {
   height: 2.5rem;
   width: 2.5rem;
   margin-bottom: 5rem;
+  cursor: pointer;
+  margin-top: 28px;
 }
 
 .clouse_aside_image {
@@ -161,9 +161,13 @@ a {
   color: #ffffff;
   font-size: 1.3rem;
   width: 100%;
-  transition: .3s ease;
+  transition: 0.3s ease;
 
   &:hover {
-    border-right: -3px solid #ffffff71;
+    border-right: 3px solid #ffffff71;
+  }
+
+  &:focus {
+    border-right: 3px solid #ffffff71;
   }
 }
