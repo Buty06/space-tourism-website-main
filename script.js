@@ -17,20 +17,20 @@ clouse_aside.addEventListener("click", () => {
 });
 
 const links = [
-  { text: "00 Home", href: "/", className: "aside_link" },
+  { text: "00 Home", href: "/space-tourism-website-main/", className: "aside_link" },
   {
     text: "01 Destination",
-    href: "/starter-code/destination-moon.html",
+    href: "/space-tourism-website-main/starter-code/destination-moon.html",
     className: "aside_link",
   },
   {
     text: "02 Crew",
-    href: "/starter-code/crew-commander.html",
+    href: "/space-tourism-website-main/starter-code/crew-commander.html",
     className: "aside_link",
   },
   {
     text: "03 Technology",
-    href: "/starter-code/technology-capsule.html",
+    href: "/space-tourism-website-main/starter-code/technology-capsule.html",
     className: "aside_link",
   },
 ];
