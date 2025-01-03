@@ -4,12 +4,16 @@ const aside = document.querySelector(".aside");
 
 menu_activator.addEventListener("click", () => {
   aside.classList.remove('transition2')
+  aside.classList.remove('display')
   aside.classList.add('transition')
-  
 });
 
 clouse_aside.addEventListener("click", () => {
   aside.classList.add('transition2')
+
+  setTimeout(() => {
+    aside.classList.add('display')
+  }, 1000);
 });
 
 const links = [

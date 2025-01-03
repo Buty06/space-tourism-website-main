@@ -25,6 +25,7 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-rows: 6rem 1fr;
+  overflow-x: hidden;
 }
 
 .header_navigation {
@@ -179,6 +180,10 @@ a {
   animation: transitionAside2 1s ease-in-out forwards;
 }
 
+.display{
+  display: none;
+}
+
 @keyframes transitionAside {
   0%{
     transform: translateX(100%);  
@@ -194,11 +199,7 @@ a {
     transform: translateX(0%);  
   }
 
-  99%{
-    transform: translateX(100%);  
-  }
-
   100%{
-    display: none;
+    transform: translateX(100%);  
   }
 }
