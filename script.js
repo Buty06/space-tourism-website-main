@@ -19,22 +19,22 @@ clouse_aside.addEventListener("click", () => {
 const links = [
   {
     text: "00 Home",
-    href: "./",
+    href: "/",
     className: "aside_link",
   },
   {
     text: "01 Destination",
-    href: "./starter-code/destination-moon.html",
+    href: "/destination-moon.html",
     className: "aside_link",
   },
   {
     text: "02 Crew",
-    href: "./starter-code/crew-commander.html",
+    href: "/crew-commander.html",
     className: "aside_link",
   },
   {
     text: "03 Technology",
-    href: "./starter-code/technology-capsule.html",
+    href: "/technology-capsule.html",
     className: "aside_link",
   },
 ];
