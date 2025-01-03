@@ -123,15 +123,13 @@ a {
   position: absolute;
   height: 100%;
   width: 70%;
-  transition: all 1s ease;
   right: 0;
   backdrop-filter: blur(2rem);
-  display: flex;
+  display: none;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   padding: 0rem 2rem;
-  display: none;
 }
 
 .clouse_aside {
@@ -166,8 +164,41 @@ a {
   &:hover {
     border-right: 3px solid #ffffff71;
   }
+}
 
-  &:focus {
-    border-right: 3px solid #ffffff71;
+.active{
+  border-right: 3px solid #ffffff71;
+}
+
+.transition{
+  display: flex;
+  animation: transitionAside 1s ease-in-out forwards;
+}
+
+.transition2{
+  animation: transitionAside2 1s ease-in-out forwards;
+}
+
+@keyframes transitionAside {
+  0%{
+    transform: translateX(100%);  
+  }
+
+  100%{
+    transform: translateX(0%);  
+  }
+}
+
+@keyframes transitionAside2 {
+  0%{
+    transform: translateX(0%);  
+  }
+
+  99%{
+    transform: translateX(100%);  
+  }
+
+  100%{
+    display: none;
   }
 }

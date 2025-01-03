@@ -1,0 +1,3 @@
+.main_container{
+    grid-template-rows: 3rem 1fr;
+}
