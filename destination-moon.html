@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./starter-code/assets/icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./starter-code/assets/icon.png"
+    />
     <style>
       html {
         visibility: hidden;
@@ -24,7 +29,11 @@
   </head>
   <body>
     <header class="header_navigation">
-      <img src="./starter-code/assets/shared/logo.svg" alt="Home" class="logo" />
+      <img
+        src="./starter-code/assets/shared/logo.svg"
+        alt="Home"
+        class="logo"
+      />
 
       <button class="menu_activator">
         <img
@@ -37,12 +46,61 @@
 
     <main class="main">
       <article class="main_container">
-        <p class="page_title">Pick your destination</p>
-        Moon Mars Europa Titan Moon See our planet as you’ve never seen it
-        before. A perfect relaxing trip away to help regain perspective and come
-        back refreshed. While you’re there, take in some history by visiting the
-        Luna 2 and Apollo 11 landing sites. Avg. distance 384,400 km Est. travel
-        time 3 days
+        <h1 class="page_title">
+          <span class="title_span">01</span>Pick your destination
+        </h1>
+
+        <div class="container">
+          <section class="image_container">
+            <img
+              class="moon_image"
+              src="./starter-code/assets/destination/image-moon.png"
+            />
+          </section>
+
+          <section class="main_explications">
+            <section class="planets_links_container">
+              <a href="/destination-moon.html" class="planet_links Plink1"
+                >Moon</a
+              >
+
+              <a href="/destination-mars.html" class="planet_links Plink2"
+                >Mars</a
+              >
+
+              <a href="/destination-europa.html" class="planet_links Plink3"
+                >Europa</a
+              >
+
+              <a href="/destination-titan.html" class="planet_links Plink4"
+                >Titan</a
+              >
+            </section>
+
+            <section class="main_explications_text">
+              <h2 class="text text1">Moon</h2>
+              <p class="text text2">
+                See our planet as you’ve never seen it before. A perfect
+                relaxing trip away to help regain perspective and come back
+                refreshed. While you’re there, take in some history by visiting
+                the Luna 2 and Apollo 11 landing sites.
+              </p>
+            </section>
+
+            <hr class="line">
+
+            <section class="main_statics">
+              <div class="containers_statics">
+                <p class="statics_paragraph1">Avg. distance</p>
+                <p class="statics_paragraph2">384,400</p>
+              </div>
+              <div class="containers_statics">
+                <p class="statics_paragraph1">km Est. travel time</p>
+                <p class="statics_paragraph2">3 days</p>
+              </div>
+            </section>
+          </section>
+        </div>
       </article>
     </main>
 
@@ -54,7 +112,6 @@
           class="clouse_aside_image"
         />
       </section>
-
     </aside>
 
     <script src="../script.js"></script>

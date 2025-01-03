@@ -52,9 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const petunia = new URL(href, window.location.origin).pathname
 
-    console.log(petunia);
-    
-
     if (currentPathname === petunia) {
       anchor.classList.add('active')
     }
