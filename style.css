@@ -43,8 +43,7 @@ body {
 }
 
 .menu_activator_image {
-  color: black;
-  background-color: black;
+  background: #0d0b16;
   height: 100%;
   width: 100%;
   cursor: pointer;

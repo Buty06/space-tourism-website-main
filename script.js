@@ -3,34 +3,38 @@ const menu_activator = document.querySelector(".menu_activator");
 const aside = document.querySelector(".aside");
 
 menu_activator.addEventListener("click", () => {
-  aside.classList.remove('transition2')
-  aside.classList.remove('display')
-  aside.classList.add('transition')
+  aside.classList.remove("transition2");
+  aside.classList.remove("display");
+  aside.classList.add("transition");
 });
 
 clouse_aside.addEventListener("click", () => {
-  aside.classList.add('transition2')
+  aside.classList.add("transition2");
 
   setTimeout(() => {
-    aside.classList.add('display')
+    aside.classList.add("display");
   }, 1000);
 });
 
 const links = [
-  { text: "00 Home", href: "/space-tourism-website-main/", className: "aside_link" },
+  {
+    text: "00 Home",
+    href: "./",
+    className: "aside_link",
+  },
   {
     text: "01 Destination",
-    href: "/space-tourism-website-main/starter-code/destination-moon.html",
+    href: "./starter-code/destination-moon.html",
     className: "aside_link",
   },
   {
     text: "02 Crew",
-    href: "/space-tourism-website-main/starter-code/crew-commander.html",
+    href: "./starter-code/crew-commander.html",
     className: "aside_link",
   },
   {
     text: "03 Technology",
-    href: "/space-tourism-website-main/starter-code/technology-capsule.html",
+    href: "./starter-code/technology-capsule.html",
     className: "aside_link",
   },
 ];
@@ -38,7 +42,7 @@ const links = [
 document.addEventListener("DOMContentLoaded", () => {
   const fragment = document.createDocumentFragment();
 
-  const currentPathname = window.location.pathname
+  const currentPathname = window.location.pathname;
 
   for (const { text, href, className } of links) {
     const anchor = document.createElement("a");
@@ -46,7 +50,12 @@ document.addEventListener("DOMContentLoaded", () => {
     anchor.href = href;
     anchor.className = className;
 
-    if (currentPathname.endsWith(href.replace('./', ''))) {
+    const petunia = new URL(href, window.location.origin).pathname
+
+    console.log(petunia);
+    
+
+    if (currentPathname === petunia) {
       anchor.classList.add('active')
     }
 
