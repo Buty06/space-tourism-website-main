@@ -50,17 +50,23 @@ const links = [
 
 document.addEventListener("DOMContentLoaded", () => {
   const fragment = document.createDocumentFragment();
-  let currentPathname = window.location.pathname;
-  currentPathname = currentPathname.replace("/space-tourism-website-main", "");
-  if (currentPathname === "/index.html") {
+  const basePath = window.location.pathname.includes(
+    "/space-tourism-website-main",
+  )
+    ? "/space-tourism-website-main"
+    : "";
+
+  let currentPathname = window.location.pathname.replace(basePath, "");
+  if (currentPathname === "/index.html" || currentPathname === "") {
     currentPathname = "/";
   }
-
+  console.log(currentPathname);
   for (const { text, href, className } of links) {
     const anchor = document.createElement("a");
     anchor.textContent = text;
-    anchor.href = href;
+    anchor.href = basePath + href;
     anchor.className = className;
+    console.log(anchor.href);
 
     if (currentPathname === href) {
       anchor.classList.add("active");
