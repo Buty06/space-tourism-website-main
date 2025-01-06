@@ -28,29 +28,33 @@ main.addEventListener("click", () => {
 const links = [
   {
     text: "00 Home",
-    href: "./index.html",
+    href: "/",
     className: "aside_link",
   },
   {
     text: "01 Destination",
-    href: "./destination-moon.html",
+    href: "/destination-moon.html",
     className: "aside_link",
   },
   {
     text: "02 Crew",
-    href: "./crew-commander.html",
+    href: "/crew-commander.html",
     className: "aside_link",
   },
   {
     text: "03 Technology",
-    href: "./technology-capsule.html",
+    href: "/technology-capsule.html",
     className: "aside_link",
   },
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
   const fragment = document.createDocumentFragment();
-  const currentPathname = window.location.pathname;
+  let currentPathname = window.location.pathname;
+  currentPathname = currentPathname.replace("/space-tourism-website-main", "");
+  if (currentPathname === "/index.html") {
+    currentPathname = "/";
+  }
 
   for (const { text, href, className } of links) {
     const anchor = document.createElement("a");
@@ -58,9 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
     anchor.href = href;
     anchor.className = className;
 
-    const petunia = new URL(href, window.location.origin).pathname;
-
-    if (currentPathname === petunia) {
+    if (currentPathname === href) {
       anchor.classList.add("active");
     }
 
