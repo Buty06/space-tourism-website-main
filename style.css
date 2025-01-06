@@ -159,11 +159,6 @@ a {
   color: #ffffff;
   font-size: 1.3rem;
   width: 100%;
-  transition: 0.3s ease;
-
-  &:hover {
-    border-right: 3px solid #ffffff71;
-  }
 }
 
 .active{
@@ -183,6 +178,14 @@ a {
   display: none;
 }
 
+.hoverState{
+  animation: borderTransition 0.3s ease-in forwards;
+}
+
+.outState{
+  animation: borderTransitionOut 0.3s ease-in forwards;
+}
+
 @keyframes transitionAside {
   0%{
     transform: translateX(100%);  
@@ -200,5 +203,25 @@ a {
 
   100%{
     transform: translateX(100%);  
+  }
+}
+
+@keyframes borderTransition {
+  from{
+    border-right: 3px solid #ffffff00;
+  }
+
+  to{
+    border-right: 3px solid #ffffff71;
+  }
+}
+
+@keyframes borderTransitionOut {
+  from{
+    border-right: 3px solid #ffffff71;
+  }
+  
+  to{
+    border-right: 3px solid #ffffff00;
   }
 }

@@ -29,11 +29,14 @@
   </head>
   <body>
     <header class="header_navigation">
-      <img
+      <a href="./index.html">
+        <img
         src="./starter-code/assets/shared/logo.svg"
         alt="Home"
         class="logo"
+        style="cursor: pointer;"
       />
+      </a>
 
       <button class="menu_activator">
         <img
@@ -44,7 +47,7 @@
       </button>
     </header>
 
-    <main class="main">
+    <main class="main" id="main">
       <article class="main_container">
         <h1 class="page_title">
           <span class="title_span">01</span>Pick your destination
@@ -59,22 +62,7 @@
           </section>
 
           <section class="main_explications">
-            <section class="planets_links_container">
-              <a href="/destination-moon.html" class="planet_links Plink1"
-                >Moon</a
-              >
-
-              <a href="/destination-mars.html" class="planet_links Plink2"
-                >Mars</a
-              >
-
-              <a href="/destination-europa.html" class="planet_links Plink3"
-                >Europa</a
-              >
-
-              <a href="/destination-titan.html" class="planet_links Plink4"
-                >Titan</a
-              >
+            <section class="planets_links_container" id="links_container">
             </section>
 
             <section class="main_explications_text">
@@ -114,6 +102,7 @@
       </section>
     </aside>
 
-    <script src="../script.js"></script>
+    <script src="./script.js"></script>
+    <script src="./starter-code/planets.js"></script>
   </body>
 </html>
