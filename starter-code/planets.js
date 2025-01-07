@@ -29,46 +29,6 @@ const shwoData = async () => {
   destination = data.destinations;
   const buttons = [moon, mars, europa, titan];
 
-  // moon.addEventListener('click',()=>{
-  //   const des = destination[0]
-
-  //   planetsImage.src = des.images.png
-  //   title.textContent = des.name
-  //   text.textContent = des.description
-  //   distance.textContent = des.distance
-  //   travel.textContent = des.travel
-  // })
-
-  // mars.addEventListener('click',()=>{
-  //   const des = destination[1]
-
-  //   planetsImage.src = des.images.png
-  //   title.textContent = des.name
-  //   text.textContent = des.description
-  //   distance.textContent = des.distance
-  //   travel.textContent = des.travel
-  // })
-
-  // europa.addEventListener('click',()=>{
-  //   const des = destination[2]
-
-  //   planetsImage.src = des.images.png
-  //   title.textContent = des.name
-  //   text.textContent = des.description
-  //   distance.textContent = des.distance
-  //   travel.textContent = des.travel
-  // })
-
-  // titan.addEventListener('click',()=>{
-  //   const des = destination[3]
-
-  //   planetsImage.src = des.images.png
-  //   title.textContent = des.name
-  //   text.textContent = des.description
-  //   distance.textContent = des.distance
-  //   travel.textContent = des.travel
-  // })
-
   buttons.forEach((element, index) => {
     const des = destination[index];
 
