@@ -9,9 +9,15 @@ const text = doc.getElementById("text");
 const distance = doc.getElementById("distance");
 const travel = doc.getElementById("travel");
 
-const getData = async () => {
+const basePath = window.location.pathname.includes(
+  "/space-tourism-website-main"
+)
+  ? "/space-tourism-website-main"
+  : "";
+
+  const getData = async () => {
   try {
-    const response = await fetch("./starter-code/data.json");
+    const response = await fetch(basePath+"./starter-code/data.json");
 
     if (!response) {
       throw new Error("Error al cargar el archivo");
