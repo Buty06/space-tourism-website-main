@@ -57,13 +57,9 @@ body {
 }
 
 .planet_links {
-  color: #d0d6f9;
-  font-size: 1.3rem;
-
-  &:hover {
-    color: #fff;
-    border-bottom: 3px solid #d0d6f9;
-  }
+  background-color: transparent;
+  color: #D0D6F9;
+  font-size: 1rem;
 }
 
 .activePlanets {

@@ -31,11 +31,11 @@
     <header class="header_navigation">
       <a href="./index.html">
         <img
-        src="./starter-code/assets/shared/logo.svg"
-        alt="Home"
-        class="logo"
-        style="cursor: pointer;"
-      />
+          src="./starter-code/assets/shared/logo.svg"
+          alt="Home"
+          class="logo"
+          style="cursor: pointer"
+        />
       </a>
 
       <button class="menu_activator">
@@ -49,6 +49,7 @@
             <path d="M0 0h48v6H0zM0 9h48v6H0zM0 18h48v6H0z" />
           </g>
         </svg>
+      </button>
     </header>
 
     <main class="main" id="main">
@@ -60,6 +61,7 @@
         <div class="container">
           <section class="image_container">
             <img
+              id="planetsImage"
               class="moon_image"
               src="./starter-code/assets/destination/image-moon.png"
             />
@@ -67,11 +69,15 @@
 
           <section class="main_explications">
             <section class="planets_links_container" id="links_container">
+              <button class="planet_links" id="moon">MOON</button>
+              <button class="planet_links" id="mars">MARS</button>
+              <button class="planet_links" id="europa">EUROPA</button>
+              <button class="planet_links" id="titan">TITAN</button>
             </section>
 
             <section class="main_explications_text">
-              <h2 class="text text1">Moon</h2>
-              <p class="text text2">
+              <h2 class="text text1" id="title">MOON</h2>
+              <p class="text text2" id="text">
                 See our planet as you’ve never seen it before. A perfect
                 relaxing trip away to help regain perspective and come back
                 refreshed. While you’re there, take in some history by visiting
@@ -79,16 +85,16 @@
               </p>
             </section>
 
-            <hr class="line">
+            <hr class="line" />
 
             <section class="main_statics">
               <div class="containers_statics">
                 <p class="statics_paragraph1">Avg. distance</p>
-                <p class="statics_paragraph2">384,400</p>
+                <p class="statics_paragraph2" id="distance">384,400</p>
               </div>
               <div class="containers_statics">
                 <p class="statics_paragraph1">km Est. travel time</p>
-                <p class="statics_paragraph2">3 days</p>
+                <p class="statics_paragraph2" id="time">3 days</p>
               </div>
             </section>
           </section>
