@@ -17,7 +17,7 @@ const basePath = window.location.pathname.includes(
 
   const getData = async () => {
   try {
-    const response = await fetch(basePath+"./starter-code/data.json");
+    const response = await fetch(basePath+"/starter-code/data.json");
 
     if (!response) {
       throw new Error("Error al cargar el archivo");
