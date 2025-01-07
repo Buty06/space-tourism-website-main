@@ -11,7 +11,7 @@ const travel = doc.getElementById("travel");
 
 const getData = async () => {
   try {
-    const response = await fetch("/starter-code/data.json");
+    const response = await fetch("./starter-code/data.json");
 
     if (!response) {
       throw new Error("Error al cargar el archivo");
