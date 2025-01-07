@@ -58,12 +58,14 @@ body {
 
 .planet_links {
   background-color: transparent;
-  color: #D0D6F9;
+  color: #d0d6f9;
   font-size: 1rem;
+  padding-bottom: 1rem;
 }
 
 .activePlanets {
   border-bottom: 3px solid #ffffff;
+  color: #fff;
 }
 
 .main_explications_text {
@@ -117,11 +119,11 @@ body {
   font-size: 3rem;
 }
 
-.planets_hover{
+.planets_hover {
   animation: borderTransitionPlanets 0.3s ease-in forwards;
 }
 
-.planets_out{
+.planets_out {
   animation: borderTransitionOutPlanets 0.3s ease-in forwards;
 }
 

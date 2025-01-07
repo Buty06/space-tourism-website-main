@@ -18,60 +18,79 @@ const getData = async () => {
     }
 
     const data = await response.json();
-    return data
-
+    return data;
   } catch (error) {
-    console.error('Hubo un problema al obtener los datos ', error)
+    console.error("Hubo un problema al obtener los datos ", error);
   }
 };
 
 const shwoData = async () => {
-  data = await getData()
-  destination = data.destinations
-  
-  moon.addEventListener('click',()=>{
-    const des = destination[0]
+  data = await getData();
+  destination = data.destinations;
+  const buttons = [moon, mars, europa, titan];
 
-    planetsImage.src = des.images.png
-    title.textContent = des.name
-    text.textContent = des.description
-    distance.textContent = des.distance
-    travel.textContent = des.travel
-  })
+  // moon.addEventListener('click',()=>{
+  //   const des = destination[0]
 
-  mars.addEventListener('click',()=>{
-    const des = destination[1]
+  //   planetsImage.src = des.images.png
+  //   title.textContent = des.name
+  //   text.textContent = des.description
+  //   distance.textContent = des.distance
+  //   travel.textContent = des.travel
+  // })
 
-    planetsImage.src = des.images.png
-    title.textContent = des.name
-    text.textContent = des.description
-    distance.textContent = des.distance
-    travel.textContent = des.travel
-  })
+  // mars.addEventListener('click',()=>{
+  //   const des = destination[1]
 
-  europa.addEventListener('click',()=>{
-    const des = destination[2]
+  //   planetsImage.src = des.images.png
+  //   title.textContent = des.name
+  //   text.textContent = des.description
+  //   distance.textContent = des.distance
+  //   travel.textContent = des.travel
+  // })
 
-    planetsImage.src = des.images.png
-    title.textContent = des.name
-    text.textContent = des.description
-    distance.textContent = des.distance
-    travel.textContent = des.travel
-  })
+  // europa.addEventListener('click',()=>{
+  //   const des = destination[2]
 
-  titan.addEventListener('click',()=>{
-    const des = destination[3]
+  //   planetsImage.src = des.images.png
+  //   title.textContent = des.name
+  //   text.textContent = des.description
+  //   distance.textContent = des.distance
+  //   travel.textContent = des.travel
+  // })
 
-    planetsImage.src = des.images.png
-    title.textContent = des.name
-    text.textContent = des.description
-    distance.textContent = des.distance
-    travel.textContent = des.travel
-  })
+  // titan.addEventListener('click',()=>{
+  //   const des = destination[3]
 
-  
-}
+  //   planetsImage.src = des.images.png
+  //   title.textContent = des.name
+  //   text.textContent = des.description
+  //   distance.textContent = des.distance
+  //   travel.textContent = des.travel
+  // })
 
-shwoData()
+  buttons.forEach((element, index) => {
+    const des = destination[index];
 
-// console.log(window.location.pathname);
+    element.addEventListener("click", () => {
+      planetsImage.src = des.images.png;
+      title.textContent = des.name;
+      text.textContent = des.description;
+      distance.textContent = des.distance;
+      travel.textContent = des.travel;
+      // element.classList.add("activePlanets");
+    });
+
+    element.addEventListener("mouseover", () => {
+      element.classList.remove("planets_out");
+      element.classList.add("planets_hover");
+    });
+
+    element.addEventListener("mouseout", () => {
+      element.classList.remove("planets_hover");
+      element.classList.add("planets_out");
+    });
+  });
+};
+
+shwoData();
