@@ -175,11 +175,11 @@ a {
 
 .transition{
   display: flex;
-  animation: transitionAside 1s ease-in-out forwards;
+  animation: transitionAside .5s ease-in-out forwards;
 }
 
 .transition2{
-  animation: transitionAside2 1s ease-in-out forwards;
+  animation: transitionAside2 .5s ease-in-out forwards;
 }
 
 .display{

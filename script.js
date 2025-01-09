@@ -17,7 +17,7 @@ clouse_aside.addEventListener("click", () => {
 
   setTimeout(() => {
     aside.classList.add("display");
-  }, 1000);
+  }, 500);
 });
 
 //? Cerrar el aside tocando el main de la pagina
@@ -26,7 +26,7 @@ main.addEventListener("click", () => {
 
   setTimeout(() => {
     aside.classList.add("display");
-  }, 1000);
+  }, 500);
 });
 
 //? Los links de la pagina respectivas para cada lado

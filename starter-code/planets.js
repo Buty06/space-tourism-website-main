@@ -15,7 +15,7 @@ const basePath = window.location.pathname.includes(
   ? "/space-tourism-website-main"
   : "";
 
-  const getData = async () => {
+const getData = async () => {
   try {
     const response = await fetch(basePath+"/starter-code/data.json");
 

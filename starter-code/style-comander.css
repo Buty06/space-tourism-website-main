@@ -76,11 +76,39 @@ body {
   display: block;
 }
 
-.overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to bottom, transparent 80%, #0b0e17 );
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 80%, #0b0e17);
+}
+
+.crew_hover {
+    animation: borderTransitionPlanets 0.3s ease-in forwards;
+  }
+  
+  .crew_out {
+    animation: borderTransitionOutPlanets 0.3s ease-in forwards;
+  }
+
+@keyframes borderTransitionPlanets {
+  from {
+    background-color: #979797;
+  }
+
+  to {
+    background-color: #fff;
+  }
+}
+
+@keyframes borderTransitionOutPlanets {
+  from {
+    background-color: #fff;
+  }
+
+  to {
+    background-color: #979797;
+  }
 }
