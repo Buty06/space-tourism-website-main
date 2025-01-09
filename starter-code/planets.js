@@ -48,11 +48,14 @@ const shwoData = async () => {
     });
 
     element.addEventListener("mouseover", () => {
-      element.classList.remove("planets_out");
-      element.classList.add("planets_hover");
+      //*ES mejor usar replace que te hace lo mismo es una sola linea
+      // element.classList.remove("planets_out");
+      // element.classList.add("planets_hover");
+      element.classList.replace('planets_out', 'planets_hover')
     });
 
     element.addEventListener("mouseout", () => {
+      //? Pero si lo hago 2 veces se cancela XD
       element.classList.remove("planets_hover");
       element.classList.add("planets_out");
     });
