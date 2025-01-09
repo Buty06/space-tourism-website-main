@@ -15,6 +15,7 @@ body {
   justify-content: center;
   color: #fff;
   font-size: 1.3rem;
+  text-transform: capitalize;
 }
 
 .title_span {

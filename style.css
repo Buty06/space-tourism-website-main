@@ -36,10 +36,15 @@ body {
 }
 
 .menu,
-.menu_activator,
-.logo {
+.menu_activator {
   height: 1.7rem;
   width: 1.7rem;
+}
+
+.logo{
+  height: 2.3rem;
+  width: 2.3rem;
+  background-color: transparent;
 }
 
 .menu_activator{

@@ -44,6 +44,8 @@ const shwoData = async () => {
       text.textContent = des.description;
       distance.textContent = des.distance;
       travel.textContent = des.travel;
+
+      //!Necesito que me ayuden para la parte del active
       // element.classList.add("activePlanets");
     });
 

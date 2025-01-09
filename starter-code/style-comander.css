@@ -1,0 +1,86 @@
+body {
+  background: url(./assets/crew/background-crew-mobile.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main_content {
+  display: grid;
+  grid-template-rows: 20rem 1fr;
+  row-gap: 3rem;
+}
+
+.description {
+  display: grid;
+  grid-template-rows: 1fr 2rem;
+  justify-items: center;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rank_name {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rank {
+  font-size: 1.5rem;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.name {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.description_text {
+  font-size: 1rem;
+  color: #d0d6f9;
+}
+
+.description_pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 7.5rem;
+}
+
+.pagination_link {
+  background-color: #979797;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  transition: 0.1s ease-in-out;
+
+  &:hover {
+    background-color: #ffffff;
+  }
+}
+
+.image_crew_container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 80%, #0b0e17 );
+}
