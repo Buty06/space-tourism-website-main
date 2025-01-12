@@ -48,7 +48,7 @@ const links = [
   },
   {
     text: "03 Technology",
-    href: "/technology-capsule.html",
+    href: "/technology-vehicle.html",
     className: "aside_link",
   },
 ];

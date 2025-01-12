@@ -1,0 +1,44 @@
+body {
+  background: url(./assets/technology/background-technology-mobile.jpg)
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.main_sub_container {
+  display: grid;
+  grid-template-rows: 20rem 1fr;
+  justify-items: center;
+  gap: 3rem;
+}
+
+.main_image {
+  width: 118%;
+  height: 100%;
+}
+
+.main_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 14rem;
+    margin-bottom: 2rem;
+}
+
+.button{
+    width: 3.4rem;
+    height: 3.4rem;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    font-size: 1.5rem;
+}

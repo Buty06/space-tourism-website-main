@@ -1,32 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./starter-code/assets/icon.png"
+    />
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <style>
+      html {
+        visibility: hidden;
+        opacity: 0;
+      }
+    </style>
 
-  03 Space launch 101
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Diphylleia&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./starter-code/style-moon.css" />
+    <link rel="stylesheet" href="./starter-code/style-comander.css" />
+    <link rel="stylesheet" href="./starter-code/technology.css" />
 
-  1
-  2
-  3
+    <title>Technology</title>
+  </head>
+  <body>
+    <header class="header_navigation">
+      <a href="./index.html">
+        <img
+          src="./starter-code/assets/shared/logo.svg"
+          alt="Home"
+          class="logo"
+          style="cursor: pointer"
+        />
+      </a>
 
-  The terminology...
-  Launch vehicle
+      <button class="menu_activator">
+        <svg
+          class="menu_activator_image"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="21"
+        >
+          <g fill="#D0D6F9" fill-rule="evenodd">
+            <path d="M0 0h48v6H0zM0 9h48v6H0zM0 18h48v6H0z" />
+          </g>
+        </svg>
+      </button>
+    </header>
 
-  A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
-  payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
-  WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
-  it's quite an awe-inspiring sight on the launch pad!
-</body>
+    <main class="main" id="main">
+      <article class="main_container">
+        <h1 class="page_title">
+          <span class="title_span">03</span>Space launch 101
+        </h1>
+
+        <section class="main_sub_container">
+          <img
+            src="./starter-code/assets/technology/image-launch-vehicle-portrait.jpg"
+            class="main_image"
+          />
+
+          <section class="main_text">
+            <section class="buttons_container">
+              <button class="button" id="button1">1</button>
+              <button class="button" id="button2">2</button>
+              <button class="button" id="button3">3</button>
+            </section>
+
+            <div class="text">
+              <section class="rank_name">
+                <h2 class="rank" id="rank">The terminology...</h2>
+                <h3 class="name" id="name">Launch vehicle</h3>
+              </section>
+
+              <section class="description_text" id="description">
+                A launch vehicle or carrier rocket is a rocket-propelled vehicle
+                used to carry a payload from Earth's surface to space, usually
+                to Earth orbit or beyond. Our WEB-X carrier rocket is the most
+                powerful in operation. Standing 150 metres tall, it's quite an
+                awe-inspiring sight on the launch pad!
+              </section>
+            </div>
+          </section>
+        </section>
+      </article>
+    </main>
+
+    <aside class="aside">
+      <section class="clouse_aside">
+        <img
+          src="./starter-code/assets/shared/icon-close.svg"
+          alt="clouse"
+          class="clouse_aside_image"
+        />
+      </section>
+    </aside>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
