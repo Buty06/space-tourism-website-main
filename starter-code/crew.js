@@ -30,31 +30,45 @@ const getData = async () => {
 };
 
 const shwoData = async () => {
-    const data = await getData();
-    const crew = data.crew;
-    const buttons = [radio1, radio2, radio3, radio4];
-  
-    buttons.forEach((element, index) => {
-      const cr = crew[index];
-  
-      element.addEventListener("click", () => {
-        image.src = cr.images.png;
-        name.textContent = cr.name;
-        rank.textContent = cr.role;
-        description.textContent = cr.bio;
-      });
-  
-      element.addEventListener("mouseover", () => {
-        element.classList.replace('crew_out', 'crew_hover')
-      });
-  
-      element.addEventListener("mouseout", () => {
-        //? Pero si lo hago 2 veces se cancela XD
-        element.classList.remove("crew_hover");
-        element.classList.add("crew_out");
-      });
+  const data = await getData();
+  const crew = data.crew;
+  const buttons = [radio1, radio2, radio3, radio4];
+
+  buttons.forEach((element, index) => {
+    const cr = crew[index];
+
+    element.addEventListener("click", () => {
+      image.src = cr.images.png;
+      name.textContent = cr.name;
+      rank.textContent = cr.role;
+      description.textContent = cr.bio;
     });
-  };
-  
-  shwoData();
-  
+
+    const activeStatus = () => {
+      //*Esta es la funcion que necesito que se actualice cada vez
+      if (element.getAttribute('data-name') === name.textContent) {
+        element.classList.add("active_crew");
+      } else {
+        element.classList.remove("active_crew");
+      }
+
+      requestAnimationFrame(activeStatus);
+    };
+    activeStatus();
+
+    element.addEventListener("mouseover", () => {
+      element.classList.replace("crew_out", "crew_hover");
+    });
+
+    element.addEventListener("mouseout", () => {
+      //? Pero si lo hago 2 veces se cancela XD
+      element.classList.remove("crew_hover");
+
+      if (!element.classList.contains("active_crew")) {
+        element.classList.add("crew_out");
+      }
+    });
+  });
+};
+
+shwoData();

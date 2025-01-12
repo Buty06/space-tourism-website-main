@@ -62,6 +62,7 @@ body {
   color: #d0d6f9;
   font-size: 1rem;
   padding-bottom: 1rem;
+  border-bottom: 3px solid transparent;
 }
 
 .activePlanets {

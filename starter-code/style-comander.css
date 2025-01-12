@@ -43,6 +43,7 @@ body {
 .description_text {
   font-size: 1rem;
   color: #d0d6f9;
+  text-align: center;
 }
 
 .description_pagination {
@@ -86,12 +87,16 @@ body {
 }
 
 .crew_hover {
-    animation: borderTransitionPlanets 0.3s ease-in forwards;
-  }
-  
-  .crew_out {
-    animation: borderTransitionOutPlanets 0.3s ease-in forwards;
-  }
+  animation: borderTransitionPlanets 0.3s ease-in forwards;
+}
+
+.crew_out {
+  animation: borderTransitionOutPlanets 0.3s ease-in forwards;
+}
+
+.active_crew{
+  background-color: #fff;
+}
 
 @keyframes borderTransitionPlanets {
   from {
@@ -99,13 +104,13 @@ body {
   }
 
   to {
-    background-color: #fff;
+    background-color: #d4d4d4;
   }
 }
 
 @keyframes borderTransitionOutPlanets {
   from {
-    background-color: #fff;
+    background-color: #d4d4d4;
   }
 
   to {

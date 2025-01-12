@@ -17,7 +17,7 @@ const basePath = window.location.pathname.includes(
 
 const getData = async () => {
   try {
-    const response = await fetch(basePath+"/starter-code/data.json");
+    const response = await fetch(basePath + "/starter-code/data.json");
 
     if (!response) {
       throw new Error("Error al cargar el archivo");
@@ -44,22 +44,32 @@ const shwoData = async () => {
       text.textContent = des.description;
       distance.textContent = des.distance;
       travel.textContent = des.travel;
-
-      //!Necesito que me ayuden para la parte del active
-      // element.classList.add("activePlanets");
     });
+
+    const activeStatus = () => {
+      //Esta es la funcion que necesito que se actualice cada vez
+      if (element.textContent === title.textContent.toUpperCase()) {
+        element.classList.add("activePlanets");
+      } else {
+        element.classList.remove("activePlanets");
+      }
+
+      requestAnimationFrame(activeStatus);
+    };
+    activeStatus();
 
     element.addEventListener("mouseover", () => {
       //*ES mejor usar replace que te hace lo mismo es una sola linea
-      // element.classList.remove("planets_out");
-      // element.classList.add("planets_hover");
-      element.classList.replace('planets_out', 'planets_hover')
+      element.classList.replace("planets_out", "planets_hover");
     });
 
     element.addEventListener("mouseout", () => {
       //? Pero si lo hago 2 veces se cancela XD
       element.classList.remove("planets_hover");
-      element.classList.add("planets_out");
+
+      if (!element.classList.contains("activePlanets")) {
+        element.classList.add("planets_out");
+      }
     });
   });
 };
