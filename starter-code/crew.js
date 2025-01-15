@@ -46,7 +46,7 @@ const shwoData = async () => {
 
     const activeStatus = () => {
       //*Esta es la funcion que necesito que se actualice cada vez
-      if (element.getAttribute('data-name') === name.textContent) {
+      if (element.getAttribute("data-name") === name.textContent) {
         element.classList.add("active_crew");
       } else {
         element.classList.remove("active_crew");
