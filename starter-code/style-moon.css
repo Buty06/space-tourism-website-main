@@ -152,3 +152,53 @@ body {
     border-bottom: 3px solid #d0d6f900;
   }
 }
+
+@media (min-width: 768px) {
+  body {
+    background: url(./assets/destination/background-destination-tablet.jpg)
+      no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .page_title {
+    justify-self: flex-start;
+    font-size: 2rem;
+  }
+
+  .image_container {
+    width: 35rem;
+    height: 35rem;
+  }
+
+  .planets_links_container {
+    width: 70%;
+    align-self: center;
+  }
+
+  .planet_links {
+    font-size: 2rem;
+  }
+
+  .text1{
+    font-size: 8rem;
+  }
+
+  .text2{
+    font-size: 1.5rem;
+  }
+
+  .statics_paragraph1{
+    font-size: 2rem;
+  }
+
+  .statics_paragraph2{
+    font-size: 3rem;
+  }
+
+  .main_statics{
+    width: 100%;
+    flex-direction: row;
+    height: auto;
+  }
+}
