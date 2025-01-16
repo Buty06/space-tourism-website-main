@@ -343,4 +343,27 @@ a {
     align-content: center;
     font-size: 1.3rem;
   }
+
+  .main_container{
+    grid-template-rows: none;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .main_sections_text{
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .main_section_text_items{
+    text-align: start;
+  }
+
+  .main_sections_button_circule{
+    height: 17rem;
+    width: 17rem;
+  }
+
+  .item3{
+    font-size: 1.25rem;
+  }
 }
