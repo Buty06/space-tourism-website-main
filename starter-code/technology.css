@@ -76,3 +76,61 @@ body {
     border: 2px solid #7e7e7e;
   }
 }
+
+@media (min-width: 768px) {
+  body {
+    background: url(./assets/technology/background-technology-tablet.jpg)
+      no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .main_sub_container{
+    grid-template-rows: 50rem 1fr;
+  }
+
+  .main_image{
+    object-fit: cover;
+    width:129%
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    background: url(./assets/technology/background-technology-desktop.jpg)
+      no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .main_sub_container{
+    grid-template-rows: none;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+
+  .main_image{
+    order: 2;
+  }
+
+  .main_text{
+    order: 1;
+    flex-direction: row;
+    gap: 3rem
+    ;
+  }
+
+  .main_image{
+    object-fit: contain;
+    width:100%;
+    box-shadow: 3px 3px 15px rgba(255, 255, 255, 0.685);
+    border-radius: 10px;
+  }
+
+  .buttons_container{
+    flex-direction: column;
+    width: auto;
+    height: 14rem;
+    margin: 0;
+  }
+}
