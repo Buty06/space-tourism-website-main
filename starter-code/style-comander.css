@@ -117,3 +117,96 @@ body {
     background-color: #979797;
   }
 }
+
+@media (min-width: 768px) {
+  body {
+    background: url(./assets/crew/background-crew-tablet.jpg)
+      no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .rank{
+    font-size: 3rem;
+  }
+
+  .name{
+    font-size: 5rem;
+  }
+
+  .description{
+    gap: 3rem;
+  }
+
+  .description_text{
+    font-size: 2rem;
+  }
+
+  .text{
+    justify-content: space-between;
+  }
+
+  .main_content{
+    grid-template-rows: 30rem 1fr;
+  }
+
+  .description_pagination{
+    width: 11rem;
+  }
+
+  .pagination_link{
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    background: url(./assets/crew/background-crew-desktop.jpg)
+      no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .main_content{
+    grid-template-rows: none;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+
+  .text{
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .description{
+    gap: 0;
+  }
+
+  .main_container{
+    gap: 0;
+  }
+
+  .description_pagination{
+    margin-top: -20rem;
+  }
+
+  .rank_name{
+    align-items: flex-start;
+  }
+
+  .rank{
+    font-size: 2rem;
+    text-align: start;
+  }
+
+  .name{
+    font-size: 3rem;
+    text-align: start;
+  }
+
+  .description_text{
+    text-align: start;
+    font-size: 1.5rem;
+  }
+}
