@@ -1,18 +1,26 @@
-const main = document.querySelector(".main");
+const main = document.querySelector(".loading_screen");
 
 const leaveAnimation = () => {
-  anime({
-    targets: main,
-    opacity: 0,
-    duration: 4000,
+  return new Promise((resolve) => {
+    anime({
+      targets: main,
+      width: '100%',
+      duration: 2000,
+      easing: 'linear',
+      complete: resolve,
+    });
   });
 };
 
 const enterAnimation = () => {
-  anime({
-    targets: main,
-    opacity: 1,
-    duration: 4000,
+  return new Promise((resolve) => {
+    anime({
+      targets: main,
+      width: '0%',
+      duration: 2000,
+      easing: 'linear',
+      complete: resolve,
+    });
   });
 };
 
