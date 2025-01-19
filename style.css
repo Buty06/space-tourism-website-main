@@ -168,7 +168,7 @@ a {
   color: #ffffff;
   font-size: 1.3rem;
   width: 100%;
-  border-bottom: 3px solid transparent  ;
+  border-bottom: 3px solid transparent;
 }
 
 .active {
@@ -218,21 +218,21 @@ a {
 
 @keyframes borderTransition {
   from {
-    border-bottom: 3px solid #ffffff00;
+    border-right: 3px solid #ffffff00;
   }
 
   to {
-    border-bottom: 3px solid #ffffff71;
+    border-right: 3px solid #ffffff71;
   }
 }
 
 @keyframes borderTransitionOut {
   from {
-    border-bottom: 3px solid #ffffff71;
+    border-right: 3px solid #ffffff71;
   }
 
   to {
-    border-bottom: 3px solid #ffffff00;
+    border-right: 3px solid #ffffff00;
   }
 }
 
@@ -245,19 +245,19 @@ a {
     grid-template-rows: 7rem 1fr;
   }
 
-  .clouse_aside{
+  .clouse_aside {
     display: none;
   }
 
-  .clouse_aside_image{
+  .clouse_aside_image {
     display: none;
   }
 
-  .menu_activator{
+  .menu_activator {
     display: none;
   }
 
-  .aside{
+  .aside {
     position: absolute;
     top: 0;
     display: flex;
@@ -268,56 +268,76 @@ a {
     /* background-color: #0b0d19; */
   }
 
-  .aside_links{
+  .aside_links {
     flex-direction: row;
     align-items: center;
     height: 100%;
   }
 
-  .transition{
+  .transition {
     animation: none;
   }
 
-  .transition2{
+  .transition2 {
     animation: none;
   }
 
-  .aside_link{
+  .aside_link {
     width: auto;
     height: 100%;
     align-content: center;
     font-size: 1.6rem;
   }
 
-  .active{
+  .active {
     border-bottom: 3px solid #ffffff71;
     border-right: 0;
   }
 
-  .main{
+  .main {
     padding: 7rem;
   }
 
-  .item1{
+  .item1 {
     font-size: 2rem;
   }
 
-  .item2{
+  .item2 {
     font-size: 8rem;
   }
 
-  .item3{
+  .item3 {
     font-size: 1.5rem;
   }
 
-  .main_sections_button_circule{
+  .main_sections_button_circule {
     height: 18rem;
     width: 18rem;
   }
 
-  .logo{
+  .logo {
     width: 3rem;
     height: 3rem;
+  }
+
+  @keyframes borderTransition {
+    from {
+      border-bottom: 3px solid #ffffff00;
+    }
+
+    to {
+      border-bottom: 3px solid #ffffff71;
+    }
+  }
+
+  @keyframes borderTransitionOut {
+    from {
+      border-bottom: 3px solid #ffffff71;
+    }
+
+    to {
+      border-bottom: 3px solid #ffffff00;
+    }
   }
 }
 
@@ -331,44 +351,44 @@ a {
     margin-top: 2rem;
   }
 
-  .aside{
+  .aside {
     width: 60%;
     background-color: transparent;
     margin-top: 2rem;
     height: 5.5rem;
   }
 
-  .aside_link{
+  .aside_link {
     width: auto;
     height: 100%;
     align-content: center;
     font-size: 1.3rem;
   }
 
-  .main_container{
+  .main_container {
     grid-template-rows: none;
     grid-template-columns: 1fr 1fr;
   }
 
-  .main_sections_text{
+  .main_sections_text {
     justify-content: center;
     align-items: flex-start;
   }
 
-  .main_section_text_items{
+  .main_section_text_items {
     text-align: start;
   }
 
-  .main_sections_button_circule{
+  .main_sections_button_circule {
     height: 17rem;
     width: 17rem;
   }
 
-  .item3{
+  .item3 {
     font-size: 1.25rem;
   }
 
-  .logo{
+  .logo {
     margin-left: 3rem;
   }
 }

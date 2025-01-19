@@ -31,7 +31,7 @@
 
     <title>Technology</title>
   </head>
-  <body>
+  <body data-barba="wrapper">
     <header class="header_navigation">
       <a href="./index.html">
         <img
@@ -71,9 +71,15 @@
 
           <section class="main_text">
             <section class="buttons_container">
-              <button class="button" id="button1" data-name="Launch vehicle">1</button>
-              <button class="button" id="button2" data-name="Spaceport">2</button>
-              <button class="button" id="button3" data-name="Space capsule">3</button>
+              <button class="button" id="button1" data-name="Launch vehicle">
+                1
+              </button>
+              <button class="button" id="button2" data-name="Spaceport">
+                2
+              </button>
+              <button class="button" id="button3" data-name="Space capsule">
+                3
+              </button>
             </section>
 
             <div class="text">
@@ -107,5 +113,8 @@
 
     <script src="./script.js"></script>
     <script src="./starter-code/technology.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+    <script src="./barba.js"></script>
   </body>
 </html>
