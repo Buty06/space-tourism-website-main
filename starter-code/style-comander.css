@@ -59,6 +59,7 @@ body {
   height: 0.9rem;
   border-radius: 50%;
   transition: 0.1s ease-in-out;
+  cursor: pointer;
 
   &:hover {
     background-color: #ffffff;
